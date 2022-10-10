@@ -1,0 +1,10 @@
+﻿@model ShopAppDemo.ViewModels.ProductViewModel
+
+<section class="content-section">
+    <div class="foods">
+        @foreach (var item in Model.Products)
+        {
+            @await Html.PartialAsync("_product", item)
+        }
+    </div>
+</section>

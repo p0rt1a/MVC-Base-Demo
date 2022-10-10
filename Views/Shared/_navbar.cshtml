@@ -1,0 +1,13 @@
+﻿@model ShopAppDemo.ViewModels.ProductViewModel
+
+<nav>
+    <div class="main-navbar">
+        @foreach (var item in Model.Categories)
+        {
+            <form action="/home/list" method="POST" id="@item.Id">
+                <input type="hidden" name="Id" value="@item.Id" />
+                <button class="nav-button" type="submit" form="@item.Id">@item.Name Food</button>
+            </form>
+        }
+    </div>
+</nav>
