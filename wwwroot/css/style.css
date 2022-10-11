@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+.font-funny {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
 .content-section {
     padding: 5vh 5vw;
 }
@@ -53,4 +61,15 @@
 .nav-button:hover {
     cursor: pointer;
     opacity: 0.8;
+}
+
+footer {
+    font-size: 1.2rem;
+
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6vh 0;
 }

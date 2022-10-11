@@ -1,10 +1,14 @@
-﻿@model ProductViewModel
+﻿@model List<Category>
+
+@{ 
+    var categories = Model;
+}
 
 <nav>
     <div class="main-navbar">
         <a class="nav-button font-funny" href="/home/index">All Foods</a>
 
-        @foreach (var item in Model.Categories)
+        @foreach (var item in categories)
         {
             <form action="/home/list" method="POST" id="@item.Id">
                 <input type="hidden" name="Id" value="@item.Id" />
