@@ -27,7 +27,6 @@ namespace ShopAppDemo.Controllers
         [HttpPost]
         public IActionResult List(int Id)
         {
-            Console.WriteLine(Id);
             ProductViewModel viewModel = new ProductViewModel()
             {
                 Products = ProductRepository.GetProductByCategory(Id)
