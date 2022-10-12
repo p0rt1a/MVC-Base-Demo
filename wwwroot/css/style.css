@@ -23,6 +23,10 @@ a {
     justify-content: center;
 }
 
+.food {
+    position: relative;
+}
+
 .food-image {
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,7 +62,9 @@ a {
     border-radius: 10px;
     transition: 0.3s;
 }
-.nav-button:hover {
+.nav-button:hover,
+.btn-delete:hover
+{
     cursor: pointer;
     opacity: 0.8;
 }
@@ -72,4 +78,18 @@ footer {
     display: flex;
     justify-content: center;
     padding: 6vh 0;
+}
+
+.delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.btn-delete {
+    border: none;
+    background-color: red;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 8px;
 }

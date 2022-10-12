@@ -39,7 +39,7 @@ namespace ShopAppDemo.Controllers
         public IActionResult Delete(int Id)
         {
             ProductRepository.DeleteProduct(Id);
-            return RedirectToAction("List");
+            return RedirectToAction("Index");
         }
     }
 }
