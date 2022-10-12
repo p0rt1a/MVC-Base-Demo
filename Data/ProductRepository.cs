@@ -35,5 +35,15 @@ namespace ShopAppDemo.Data
         {
             return _products.Where(p => p.CategoryId == categoryId).ToList();
         }
+
+        public static void DeleteProduct(int id)
+        {
+            var product = GetProductById(id);
+
+            if (product != null)
+            {
+                _products.Remove(product);
+            }
+        }
     }
 }

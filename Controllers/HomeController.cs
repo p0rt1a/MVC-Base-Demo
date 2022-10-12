@@ -34,5 +34,12 @@ namespace ShopAppDemo.Controllers
 
             return View(viewModel);
         }
+
+        [HttpPost]
+        public IActionResult Delete(int Id)
+        {
+            ProductRepository.DeleteProduct(Id);
+            return RedirectToAction("List");
+        }
     }
 }

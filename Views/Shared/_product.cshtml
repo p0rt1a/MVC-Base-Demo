@@ -1,6 +1,12 @@
 ﻿@model Product
 
 <div class="food">
+    <div class="delete">
+        <form action="/home/delete" method="post">
+            <input type="hidden" name="Id" value="@Model.Id"/>
+            <button type="submit" class="btn-delete">Del</button>
+        </form>
+    </div>
     <div class="food-image" style="background-image: url('/images/@Model.ImageUrl')">
     </div>
     <div class="food-content">
