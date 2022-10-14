@@ -45,5 +45,19 @@ namespace ShopAppDemo.Data
                 _products.Remove(product);
             }
         }
+
+        public static void EditProduct(Product p)
+        {
+            foreach (var item in _products)
+            {
+                if (item.Id == p.Id)
+                {
+                    item.Name = p.Name;
+                    item.Description = p.Description;
+                    item.ImageUrl = p.ImageUrl;
+                    item.CategoryId = p.CategoryId;
+                }
+            }
+        }
     }
 }

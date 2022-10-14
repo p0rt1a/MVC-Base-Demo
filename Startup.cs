@@ -32,7 +32,7 @@ namespace ShopAppDemo
             {
                 endpoints.MapControllerRoute(
                         name: "default",
-                        pattern: "{controller=Home}/{action=Index}/{categoryName?}"
+                        pattern: "{controller=Home}/{action=Index}/{id?}"
                     );
             });
         }

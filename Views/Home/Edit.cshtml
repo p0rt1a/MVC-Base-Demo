@@ -1,0 +1,24 @@
+﻿@model Product
+
+<form class="edit-page-form" action="/home/edit" method="POST">
+    <input type="hidden" name="Id" value="@Model.Id"/>
+    <div>
+        <label>Name:</label>
+        <input asp-for="Name" value="@Model.Name"/>
+    </div>
+    <div>
+        <label>Image Url:</label>
+        <input asp-for="ImageUrl" value="@Model.ImageUrl"/>
+    </div>
+    <div>
+        <label>Description:</label>
+        <input asp-for="Description" value="@Model.Description"/>
+    </div>
+    <div>
+        <label>Category:</label>
+        <select asp-for="CategoryId" asp-items="@ViewBag.Categories">
+            <option selected disabled>Seçiniz</option>
+        </select>
+    </div>
+    <button type="submit">Save Changes</button>
+</form>

@@ -93,3 +93,18 @@ footer {
     padding: 5px 8px;
     border-radius: 8px;
 }
+
+.edit {
+    position: absolute;
+    top: 6px;
+    right: 50px;
+}
+
+.btn-edit {
+    font-size: 0.8rem;
+    border: none;
+    background-color: forestgreen;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 8px;
+}

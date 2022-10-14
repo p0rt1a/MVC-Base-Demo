@@ -7,6 +7,9 @@
             <button type="submit" class="btn-delete">Del</button>
         </form>
     </div>
+    <div class="edit">
+        <a class="btn-edit" asp-controller="home" asp-action="edit" asp-route-id="@Model.Id">Edit</a>
+    </div>
     <div class="food-image" style="background-image: url('/images/@Model.ImageUrl')">
     </div>
     <div class="food-content">

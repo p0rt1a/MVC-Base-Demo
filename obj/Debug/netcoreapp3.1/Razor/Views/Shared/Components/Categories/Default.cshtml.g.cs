@@ -27,11 +27,35 @@ using ShopAppDemo.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"59cd2c6cbc998f2995eaed3b99d40092a2f2c5a1", @"/Views/Shared/Components/Categories/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7b2489e6891959a7ad2014b96b7b11efdbca1c8e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d25ddcfc20a71c859559bce7a5423eb78e9fd75a", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared_Components_Categories_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Category>>
     #nullable disable
     {
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("/home/list"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", "POST", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        #line hidden
+        #pragma warning disable 0649
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
+        #pragma warning restore 0649
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner __tagHelperRunner = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner();
+        #pragma warning disable 0169
+        private string __tagHelperStringValueBuffer;
+        #pragma warning restore 0169
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __backed__tagHelperScopeManager = null;
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __tagHelperScopeManager
+        {
+            get
+            {
+                if (__backed__tagHelperScopeManager == null)
+                {
+                    __backed__tagHelperScopeManager = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager(StartTagHelperWritingScope, EndTagHelperWritingScope);
+                }
+                return __backed__tagHelperScopeManager;
+            }
+        }
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -53,18 +77,10 @@ using ShopAppDemo.Models;
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("            <form action=\"/home/list\" method=\"POST\"");
-            BeginWriteAttribute("id", " id=\"", 284, "\"", 297, 1);
-#nullable restore
-#line 13 "C:\Users\alper\source\repos\ShopAppDemo\ShopAppDemo\Views\Shared\Components\Categories\Default.cshtml"
-WriteAttributeValue("", 289, item.Id, 289, 8, false);
-
-#line default
-#line hidden
-#nullable disable
-            EndWriteAttribute();
-            WriteLiteral(">\r\n                <input type=\"hidden\" name=\"Id\"");
-            BeginWriteAttribute("value", " value=\"", 347, "\"", 363, 1);
+            WriteLiteral("            ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59cd2c6cbc998f2995eaed3b99d40092a2f2c5a14707", async() => {
+                WriteLiteral("\r\n                <input type=\"hidden\" name=\"Id\"");
+                BeginWriteAttribute("value", " value=\"", 347, "\"", 363, 1);
 #nullable restore
 #line 14 "C:\Users\alper\source\repos\ShopAppDemo\ShopAppDemo\Views\Shared\Components\Categories\Default.cshtml"
 WriteAttributeValue("", 355, item.Id, 355, 8, false);
@@ -72,9 +88,9 @@ WriteAttributeValue("", 355, item.Id, 355, 8, false);
 #line default
 #line hidden
 #nullable disable
-            EndWriteAttribute();
-            WriteLiteral(" />\r\n                <button class=\"nav-button font-funny\" type=\"submit\"");
-            BeginWriteAttribute("form", " form=\"", 436, "\"", 451, 1);
+                EndWriteAttribute();
+                WriteLiteral(" />\r\n                <button class=\"nav-button font-funny\" type=\"submit\"");
+                BeginWriteAttribute("form", " form=\"", 436, "\"", 451, 1);
 #nullable restore
 #line 15 "C:\Users\alper\source\repos\ShopAppDemo\ShopAppDemo\Views\Shared\Components\Categories\Default.cshtml"
 WriteAttributeValue("", 443, item.Id, 443, 8, false);
@@ -82,8 +98,8 @@ WriteAttributeValue("", 443, item.Id, 443, 8, false);
 #line default
 #line hidden
 #nullable disable
-            EndWriteAttribute();
-            WriteLiteral(">");
+                EndWriteAttribute();
+                WriteLiteral(">");
 #nullable restore
 #line 15 "C:\Users\alper\source\repos\ShopAppDemo\ShopAppDemo\Views\Shared\Components\Categories\Default.cshtml"
                                                                                Write(item.Name);
@@ -91,7 +107,33 @@ WriteAttributeValue("", 443, item.Id, 443, 8, false);
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral(" Food</button>\r\n            </form>\r\n");
+                WriteLiteral(" Food</button>\r\n            ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            BeginAddHtmlAttributeValues(__tagHelperExecutionContext, "id", 1, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+#nullable restore
+#line 13 "C:\Users\alper\source\repos\ShopAppDemo\ShopAppDemo\Views\Shared\Components\Categories\Default.cshtml"
+AddHtmlAttributeValue("", 289, item.Id, 289, 8, false);
+
+#line default
+#line hidden
+#nullable disable
+            EndAddHtmlAttributeValues(__tagHelperExecutionContext);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n");
 #nullable restore
 #line 17 "C:\Users\alper\source\repos\ShopAppDemo\ShopAppDemo\Views\Shared\Components\Categories\Default.cshtml"
         }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ShopAppDemo.Data;
 using ShopAppDemo.Models;
 using ShopAppDemo.ViewModels;
@@ -39,6 +40,20 @@ namespace ShopAppDemo.Controllers
         public IActionResult Delete(int Id)
         {
             ProductRepository.DeleteProduct(Id);
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult Edit(int Id)
+        {
+            ViewBag.Categories = new SelectList(CategoryRepository.Categories, "Id", "Name");
+            return View(ProductRepository.GetProductById(Id));
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Product product)
+        {
+            ProductRepository.EditProduct(product);
             return RedirectToAction("Index");
         }
     }
